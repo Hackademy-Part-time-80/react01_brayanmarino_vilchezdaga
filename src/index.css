@@ -4,6 +4,54 @@
   box-sizing: border-box;
 }
 
+
+body {
+  background-color: #FAFAFA;
+}
+
 .text-blue {
   color: blue;
+}
+
+#custom_nav {
+  background-color: white;
+  padding: 10px;
+  align-items: center;
+  position: sticky;
+  top: 0;
+}
+
+#custom_nav ul {
+  display: flex;
+  gap: 12px;
+}
+
+#custom_nav li {
+  list-style: none;
+}
+
+#custom_nav li a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
+#custom_header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30vh;
+  background-color: whitesmoke;
+  margin: 10px 0;
+}
+
+.languages {
+  width: 60%;
+  margin: 0 auto;
+}
+
+.languages ul {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }

@@ -1,20 +1,18 @@
 import './App.css'
+import Card from './components/Card';
+import Header from './components/Header';
+import List from './components/List';
+import Navbar from './components/Navbar';
 
 function App() {
-  const nome = 'Brayan';
+  const nome = 'Brayan Marino Vilchez Daga';
+  const languages = ['php', 'laravel', 'sql', 'react', 'javascript', 'python'];
   return (
     <>
-      <div className="card">
-        <h1 className='text-blue'>Ciao a tuti!!</h1>
-        <p>Mi chiamo {nome}</p>
-        <p>Questa è la mia app in React!</p>
-
-        <div className="d-flex">
-          <label htmlFor="myInput">Lascia il tuo messagio:</label>
-          <input type="text" id='myInput' />
-        </div>
-      </div>
-
+      <Navbar />
+      <Header title={nome} />
+      <Card />
+      <List languages={languages} />
     </>
   )
 }
