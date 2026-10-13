@@ -55,3 +55,19 @@ body {
   justify-content: space-between;
   flex-wrap: wrap;
 }
+
+.w-10 {
+  width: 10%;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.justify-content-center {
+  justify-content: center;
+}
+
+.gap-10px {
+  gap: 10px;
+}

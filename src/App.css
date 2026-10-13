@@ -31,3 +31,13 @@ p,
   border-bottom: 2px solid black;
 
 }
+
+.btn-add {
+  background-color: green;
+  padding: 4px 10px;
+}
+
+.btn-sub {
+  background-color: red;
+  padding: 4px 10px;
+}

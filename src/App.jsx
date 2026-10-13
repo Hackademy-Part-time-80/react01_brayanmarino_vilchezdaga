@@ -3,6 +3,8 @@ import Card from './components/Card';
 import Header from './components/Header';
 import List from './components/List';
 import Navbar from './components/Navbar';
+import Counter from './components/Counter';
+import MyForm from './components/MyForm';
 
 function App() {
   const nome = 'Brayan Marino Vilchez Daga';
@@ -10,9 +12,11 @@ function App() {
   return (
     <>
       <Navbar />
-      <Header title={nome} />
-      <Card />
-      <List languages={languages} />
+      {/* <Header title={nome} /> */}
+      {/* <Card /> */}
+      {/* <List languages={languages} /> */}
+      <Counter />
+      <MyForm />  
     </>
   )
 }
