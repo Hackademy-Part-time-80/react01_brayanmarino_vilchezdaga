@@ -1,14 +1,17 @@
-export default function List({ languages }) {
+export default function List({ contatti }) {
   return (
-    <div className="languages">
-      <ul>
-        {languages.map((language) => {
-          return (
-            <li key={language}>{language}</li>
-          );
-        })}
-      </ul>
-    </div>
+    <>
+      {contatti.map((contatto, index) => {
+        return (
+          <div key={index} className="list">
+            <div className="item">
+              <p>Nome: {contatto.nome}</p>
+              <p>Email: {contatto.email}</p>
+            </div>
+          </div>
+        );
+      })}
+    </>
 
   );
 }

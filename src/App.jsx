@@ -12,11 +12,9 @@ function App() {
   return (
     <>
       <Navbar />
-      {/* <Header title={nome} /> */}
-      {/* <Card /> */}
-      {/* <List languages={languages} /> */}
-      <Counter />
-      <MyForm />  
+      <Header title={nome} />
+      <Card />
+      <MyForm />
     </>
   )
 }

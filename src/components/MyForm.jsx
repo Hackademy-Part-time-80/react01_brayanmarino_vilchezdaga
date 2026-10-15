@@ -1,4 +1,5 @@
 import { useState } from "react";
+import List from "./List";
 
 export default function MyForm() {
   const [nome, setNome] = useState('');
@@ -16,21 +17,12 @@ export default function MyForm() {
 
   return (
     <>
-      <form onSubmit={addContact}>
+      <form onSubmit={addContact} className="myForm">
         <input type="text" placeholder="Nome" onKeyUp={cambiareNome} />
         <input type="email" placeholder="Email" onKeyUp={cambiareEmail} />
         <button type="submit">Inviare</button>
       </form>
-
-      {contatti.map((contatto) => {
-        return (
-          <div key={contatto}>
-            <hr />
-            <p>Nome: {contatto.nome}</p>
-            <p>Email: {contatto.email}</p>
-          </div>
-        );
-      })}
+      <List contatti={contatti}/>
 
     </>
   );

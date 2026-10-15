@@ -71,3 +71,18 @@ body {
 .gap-10px {
   gap: 10px;
 }
+
+.myForm {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.list,
+.myForm {
+  width: 400px;
+  border-radius: 10px;
+  border: 1px solid gray;
+  margin: 20px auto;
+  padding: 12px;
+}
