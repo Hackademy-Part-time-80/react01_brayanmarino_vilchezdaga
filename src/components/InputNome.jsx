@@ -1,7 +1,7 @@
-export default function InputNome({ onchange }) {
+export default function InputNome({ onchange, nome }) {
   return (
     <>
-      <input type="text" placeholder="Nome" onChange={onchange} />
+      <input type="text" placeholder="Nome" onChange={onchange} value={nome} />
     </>
   );
 }

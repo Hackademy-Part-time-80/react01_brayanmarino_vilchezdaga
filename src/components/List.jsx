@@ -1,17 +1,15 @@
-export default function List({ contatti }) {
+import Item from "./Item";
+
+export default function List({ children }) {
   return (
     <>
-      {contatti.map((contatto, index) => {
-        return (
-          <div key={index} className="list">
-            <div className="item">
-              <p>Nome: {contatto.nome}</p>
-              <p>Email: {contatto.email}</p>
-            </div>
-          </div>
-        );
-      })}
+      <div className="list">
+        <p><b>Contatti:</b> </p>
+        {children}
+      </div>
     </>
 
   );
 }
+
+List.Item = Item;

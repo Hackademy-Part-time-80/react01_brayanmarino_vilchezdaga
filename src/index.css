@@ -86,3 +86,11 @@ body {
   margin: 20px auto;
   padding: 12px;
 }
+
+.list>p {
+  border-bottom: 1px solid black;
+}
+
+.item {
+  border-bottom: 1px dotted black;
+}

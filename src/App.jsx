@@ -1,5 +1,4 @@
 import './App.css'
-import Card from './components/Card';
 import Header from './components/Header';
 import Navbar from './components/Navbar';
 import Main from './components/Main';
@@ -19,19 +18,26 @@ function App() {
     e.preventDefault();
     const contact = { nome, email };
     setContatti((prev) => [...prev, contact]);
+    setNome('');
+    setEmail('');
   }
 
   return (
     <>
       <Navbar />
       <Header title={title} />
-      <Card />
       <Main>
         <Main.Form onsubmit={addContact}>
-          <Main.Form.InputNome onchange={handleChange(setNome)} />
-          <Main.Form.InputEmail onchange={handleChange(setEmail)} />
+          <Main.Form.InputNome onchange={handleChange(setNome)} nome={nome} />
+          <Main.Form.InputEmail onchange={handleChange(setEmail)} email={email} />
         </Main.Form>
-        <Main.List contatti={contatti} />
+        <Main.List contatti={contatti} >
+          {contatti.map((contatto, index) => {
+            return (
+              <Main.List.Item key={index} nome={contatto.nome} email={contatto.email} />
+            );
+          })}
+        </Main.List>
       </Main>
     </>
   )
