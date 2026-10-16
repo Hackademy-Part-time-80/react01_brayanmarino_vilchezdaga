@@ -3,6 +3,7 @@ import Header from './components/Header';
 import Navbar from './components/Navbar';
 import Main from './components/Main';
 import { useState } from 'react';
+import UserList from './components/UserList';
 
 function App() {
   const title = 'Brayan Marino Vilchez Daga';
@@ -38,6 +39,7 @@ function App() {
             );
           })}
         </Main.List>
+        <UserList/>
       </Main>
     </>
   )

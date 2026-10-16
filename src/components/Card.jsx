@@ -1,5 +1,4 @@
 export default function Card() {
-  const nome = 'Brayan';
   return (
     <>
       <div className="card">
